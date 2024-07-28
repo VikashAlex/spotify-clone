@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  /* width: 10%; */
+  background-color: antiquewhite;
+}
+nav ul{
+  background-color: black;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  color: white;
+  
+}
+ul li { 
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  & a{
+    color: white;
+    text-decoration: none;
+  }
+
+}
+.brand img{
+  font-family: "Varela Round", sans-serif;
+  font-weight: bolder;
+   padding: 0 8px;
+    width: 44px;
+}
+
+
+.container{
+  min-height: 62.7vh;
+  background-color: black;
+  width: 65%;
+  margin: 20px auto;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-size: 10px;
+  border-radius: 1rem;
+  padding: 20px ;
+  background-image: url(/public/images/bg.jpg);
+  background-size:cover;
+  
+  
+}
+
+.songItemCointainer{
+  margin: 20px 0;
+  /* width: auto; */
+ 
+}
+
+
+
+
+
+.songItem{
+  /*min-height: 20px;
+  */background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+  width:35%;
+  border-radius: 20px;
+  margin: 20px 0;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+
+
+
+  
+  & img{
+    padding: 2px 2px;
+    width: 33px;
+    border-radius:50%;
+  
+}
+}
+
+.bottom{
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 95px;
+  background-color: black;
+  color: white;
+
+
+  & .myProgressBar{
+    width: 75vw;
+  }
+}
+
+.icons {
+      margin-bottom: -15px;
+      margin-top: 15px;
+  & i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0px 7px;
+  }
+}
+.playGif{
+  position:absolute;
+  left: 26vh;
+  top: 9vh;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  
+  & .playingGif{
+    margin: 0 5px;
+    width: 42px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+}
+
+
+.footer {
+  /* margin-top: 100px; */
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  /* position: fixed; */
+height: auto;
+  width: 100%;
+  bottom: 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-link {
+  color: #ffa500;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  .container{
+    background-image: url(/public/images/vikash2.jpeg);
+    background-position: center;
+
+}
+
+
+  .myProgressBar{
+    width: auto;
+  }
+
+  .songItem{
+    width: auto;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    
+     & .icons{
+      position: unset;
+      margin-top: 2px;
+     }
+
+    & .playGif{
+      margin-top: 5px;
+      position: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .playGif .playingGif{
+    margin: 0px;
+   padding: 0;
+    width: 60px;
+  }
+ 
+}
